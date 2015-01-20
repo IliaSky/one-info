@@ -22,3 +22,16 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+# Python
+*.py[cod]
+__pycache__
+
+# DB and temporary files
+db
+tmp
+tmp.*
+_example
+
+# Windows folder icon info
+desktop.ini
