@@ -1,0 +1,37 @@
+Server hello: Gimap ready for requests from 130.204.135.109 me18mb50449317wjb
+logging in...
+Server capabilities: [IMAP4rev1 UNSELECT IDLE NAMESPACE QUOTA ID XLIST CHILDREN
+X-GM-EXT-1 UIDPLUS COMPRESS=DEFLATE ENABLE MOVE CONDSTORE ESEARCH UTF8=ACCEPT]
+Server resp: iliasky.test@gmail.com authenticated (Success)
+panic: expected " ", got "\r"
+
+goroutine 20 [running]:
+runtime.panic(0x5dff40, 0xc0820715c0)
+        c:/go/src/pkg/runtime/panic.c:279 +0x11f
+github.com/nerdgguy/go-imap.check(0x29c190, 0xc0820715c0)
+        D:/code/go/src/github.com/nerdgguy/go-imap/imap.go:12 +0x56
+github.com/nerdgguy/go-imap.(*IMAP).readLoop(0xc082008540, 0x0, 0x0)
+        D:/code/go/src/github.com/nerdgguy/go-imap/imap.go:258 +0x9e
+github.com/nerdgguy/go-imap.func┬╖001()
+        D:/code/go/src/github.com/nerdgguy/go-imap/imap.go:52 +0x30
+created by github.com/nerdgguy/go-imap.(*IMAP).Start
+        D:/code/go/src/github.com/nerdgguy/go-imap/imap.go:55 +0x2f1
+
+goroutine 16 [runnable]:
+github.com/nerdgguy/go-imap.(*IMAP).SendSync(0xc082008540, 0x6354d0, 0xa, 0xc082067cf8, 0x1, 0x1, 0x0, 0x0, 0x0)
+        D:/code/go/src/github.com/nerdgguy/go-imap/imap.go:88 +0x182
+github.com/nerdgguy/go-imap.(*IMAP).Examine(0xc082008540, 0x6295b0, 0x5, 0x1, 0x0, 0x0)
+        D:/code/go/src/github.com/nerdgguy/go-imap/imap.go:168 +0x130
+main.main()
+        D:/code/Go/one-info/experiments/email.go:53 +0x7ce
+
+goroutine 19 [finalizer wait]:
+runtime.park(0x415dd0, 0x75fb38, 0x75e4c9)
+        c:/go/src/pkg/runtime/proc.c:1369 +0xac
+runtime.parkunlock(0x75fb38, 0x75e4c9)
+        c:/go/src/pkg/runtime/proc.c:1385 +0x42
+runfinq()
+        c:/go/src/pkg/runtime/mgc0.c:2644 +0xdd
+runtime.goexit()
+        c:/go/src/pkg/runtime/proc.c:1445
+exit status 2

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OneInfo</title>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: sans-serif; }
+    #menu {  }
+    #container { width:800px; min-height: 600px; border: 2px solid #333; margin: 10px; padding: 10px;
+      resizable: true;
+      background: #eee;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px 1px;
+      background: -webkit-linear-gradient(#111, #333);
+      color: white;
+    }
+    label {display: block;padding: 5px;}
+
+  </style>
+  <link rel="stylesheet" href="main.css">
+  <!--<script src="jquery.min.js"></script>-->
+  <script src="sky_generator.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div id="container">
+    <section id="main">
+      <header>
+        <div id="logo-container">
+          <img id="logo" src="img/logo.jpg" alt="logo" />
+        </div>
+        <nav id="top-navi">
+          <a href="#/login">login</a>
+          <a href="#/register">register</a>
+        </nav>
+        <h1 id="welcome">Welcome to OneInfo</h1>
+        <!-- 
+        <nav id="main-navi">
+          <a href="#/news">news</a>
+          <a href="#/tasks">tasks</a>
+          <a href="#/topics">forum</a>
+        </nav>
+        -->
+      </header>
+      <nav id="side-nav"></nav>
+      <main id="content"></main>
+    </section>
+  </div>
+</body>
+</html>
