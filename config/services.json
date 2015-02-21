@@ -1,0 +1,62 @@
+{
+	"Web": [
+		{	"Name": "ФСС",
+			"RootUrl": "http://fss.fmi.uni-sofia.bg/",
+			"Pages": [
+				{	"Name": "Новини",
+					"Url": "",
+					"Settings" : {"Selector": "#main h1"}
+				}
+			]
+		},
+		{	"Name": "Стипендии",
+			"RootUrl": "http://eurostipendii.mon.bg/",
+			"Pages": [
+				{	"Name": "Статус",
+					"Url": "",
+					"Settings" : {"Selector": "p.countersmall"}
+				}
+			]
+		},
+		{	"Name": "Magic",
+			"RootUrl": "http://store.channelfireball.com/",
+			"Pages": [
+				{	"Name": "Най-купувани",
+					"Url": "landing",
+					"Settings" : {"Selector": "#side-top-buys li"}
+				}
+			]
+		},
+		{	"Name": "Го",
+			"RootUrl": "http://fmi.golang.bg/",
+			"Pages": [
+				{	"Name": "Предизвикателства",
+					"Url": "challenges",
+					"Settings" : {"Selector": "#challenges li"}
+				},
+				{	"Name": "Новини",
+					"Url": "announcements",
+					"Settings" : {"Selector": "#announcements h2"}
+				},
+				{	"Name": "Презентации",
+					"Url": "lectures",
+					"Settings" : {"Selector": "#lectures li"}
+				},
+				{	"Name": "Задачи",
+					"Url": "tasks",
+					"Settings" : {"Selector": "#tasks li"}
+				}
+			]
+		}
+	],
+	"Rss": [
+		{	"Name": "Времето",
+			"RootUrl": "http://sinoptik.bg/",
+			"Pages": [
+				{	"Name": "София",
+					"Url": "genrss.php?lid=100727011"
+				}
+			]
+		}
+	]
+}
