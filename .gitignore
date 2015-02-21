@@ -29,6 +29,7 @@ __pycache__
 
 # DB and temporary files
 db
+cache
 tmp
 tmp.*
 _example
